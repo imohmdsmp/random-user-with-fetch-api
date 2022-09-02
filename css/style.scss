@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+i {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url('https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg');
+
+    >section {
+        background-color: #ffff;
+        width: 800px;
+        height: 500px;
+        border-radius: 8px;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background-image: url('https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg');
+        overflow: hidden;
+
+        >div {
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+
+            h2 {
+                margin: 30px 0;
+                font-size: 35px;
+                color: white;
+                // text-shadow: 0 0 7px black;
+            }
+
+            input {
+                width: 300px;
+                height: 50px;
+                border-radius: 28px;
+                padding-left: 20px;
+                margin: 10px 0;
+                border: none;
+
+                &:focus-visible {
+                    outline: none;
+                }
+            }
+
+            button {
+                width: 168px;
+                height: 45px;
+                border-radius: 5px;
+                border: 0;
+                background-color: #50a4ff;
+                color: antiquewhite;
+                text-shadow: 0 0 10px black;
+                font-size: 15px;
+                margin-top: 40px;
+            }
+
+            &:nth-of-type(1) {
+                left: 0;
+                
+            }
+
+            &:nth-of-type(2) {
+                right: 0;
+                right: 0;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                background: #95bfff;
+                >div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    aside{
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: white;
+        width: 250px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h4{
+            margin-top: 100px;
+        }
+    }
+}
+
+.error{
+    color: red;
+    display: none;
+}
