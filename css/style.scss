@@ -61,6 +61,7 @@ main {
                 padding-left: 20px;
                 margin: 10px 0;
                 border: none;
+                background-color: rgb(209, 209, 209);
 
                 &:focus-visible {
                     outline: none;
@@ -95,13 +96,14 @@ main {
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
-                background: #95bfff;
+                background: #ffffff;
                 >div {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
                 }
+                
             }
         }
     }

@@ -59,6 +59,7 @@ main > section > div input {
   padding-left: 20px;
   margin: 10px 0;
   border: none;
+  background-color: rgb(209, 209, 209);
 }
 main > section > div input:focus-visible {
   outline: none;
@@ -89,7 +90,7 @@ main > section > div:nth-of-type(2) {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #95bfff;
+  background: #ffffff;
 }
 main > section > div:nth-of-type(2) > div {
   display: flex;

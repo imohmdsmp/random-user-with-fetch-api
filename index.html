@@ -19,21 +19,52 @@
             <p>
                 <span>
                     <b>email:</b> myrtle.grant@example.com
-                    <b>Password:</b> onetwo</span>
-                <hr>
-                <span>
                     
-                    <b>email:</b> goncalo.lacroix@example.com
-                    <b>Password:</b> jello</span>
+                    <b>Password:</b> onetwo
+                </span>
                 <hr>
                 <span>
-                    <b>email:</b> malin.dupuis@example.com
+
+                    <div><b>email:</b> goncalo.lacroix@example.com
+                    </div>
+                    <b>Password:</b> jello
+                </span>
+                <hr>
+                <span>
+                    <div><b>email:</b> malin.dupuis@example.com
+                    </div>
                     <b>Password:</b> homers
                 </span>
                 <hr>
                 <span>
-                    <b>email:</b> rose.johnson@example.com
+                    <div><b>email:</b> rose.johnson@example.com
+                    </div>
                     <b>Password:</b> mexico
+                </span>
+                <hr>
+                <span>
+                    <div>
+                        <b>email:</b> zivko.tosic@example.com
+                    </div>
+                    <b>Password:</b> good
+                </span>
+                <hr>
+                <span>
+                    <div><b>email:</b> luz.leon@example.com
+                    </div>
+                    <b>Password:</b> patrick
+                </span>
+                <hr>
+                <span>
+                    <div><b>email:</b> marc.prieto@example.com
+                    </div>
+                    <b>Password:</b> stock
+                </span>
+                <hr>
+                <span>
+                    <div><b>email:</b> ivan.allen@example.com
+                    </div>
+                    <b>Password:</b> joel
                 </span>
             </p>
         </aside>
@@ -43,9 +74,9 @@
                 <h2>SIGN IN</h2>
                 <div>
                     <label for="email"></label>
-                    <input type="text" id="email" name="email" placeholder="EMAIL">
+                    <input type="text" id="email" name="email" placeholder="EMAIL" onkeyup="enter(event)">
                     <label for="pass"></label>
-                    <input type="text" id="pass" name="pass" placeholder="PASSWORD">
+                    <input type="text" id="pass" name="pass" placeholder="PASSWORD" onkeyup="enter(event)">
                     <div class="error">Email or Password Not valid!</div>
                     <button onclick="users()">SIGN IN</button>
                 </div>

@@ -34,5 +34,10 @@ async function users() {
                     }
                 })
         })
+}
 
+function enter(e){
+    if(e.which == 13){
+        users()
+    }
 }
