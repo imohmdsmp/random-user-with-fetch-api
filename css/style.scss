@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 i {
@@ -45,12 +45,12 @@ main {
             width: 50%;
             height: 100%;
             position: absolute;
-            top: 0;
+            top: 0; 
 
             h2 {
                 margin: 30px 0;
                 font-size: 35px;
-                color: white;
+                color: rgb(35, 35, 35);
                 // text-shadow: 0 0 7px black;
             }
 
@@ -81,7 +81,10 @@ main {
 
             &:nth-of-type(1) {
                 left: 0;
-                
+                background-size: cover;
+                background-position: center;
+                background-image: url('https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg');
+                overflow: hidden;
             }
 
             &:nth-of-type(2) {
@@ -107,13 +110,18 @@ main {
         left: 0;
         top: 0;
         background-color: white;
-        width: 250px;
+        width: 290px;
         height: 100%;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
+        padding: 0 30px;
         h4{
             margin-top: 100px;
+            margin-bottom: 40px;
+        }
+        span{
+            font-size: 12px;
+            margin: 10px 0;
         }
     }
 }
@@ -121,4 +129,40 @@ main {
 .error{
     color: red;
     display: none;
+}
+
+.parent-user{
+    border-radius: 8px;
+    width: 80%;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+    background: white;
+    padding: 0 25px;
+    h2{
+        text-align: center;
+    }
+}
+
+#output {
+    display: flex;
+    figure{
+    left: 50%;
+    top: -60px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: absolute;
+    transform: translateX(-50%);
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
 }

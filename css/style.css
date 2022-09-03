@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Poppins", sans-serif;
 }
 
 i {
@@ -50,7 +50,7 @@ main > section > div {
 main > section > div h2 {
   margin: 30px 0;
   font-size: 35px;
-  color: white;
+  color: rgb(35, 35, 35);
 }
 main > section > div input {
   width: 300px;
@@ -76,6 +76,10 @@ main > section > div button {
 }
 main > section > div:nth-of-type(1) {
   left: 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg");
+  overflow: hidden;
 }
 main > section > div:nth-of-type(2) {
   right: 0;
@@ -98,17 +102,59 @@ main aside {
   left: 0;
   top: 0;
   background-color: white;
-  width: 250px;
+  width: 290px;
   height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  padding: 0 30px;
 }
 main aside h4 {
   margin-top: 100px;
+  margin-bottom: 40px;
+}
+main aside span {
+  font-size: 12px;
+  margin: 10px 0;
 }
 
 .error {
   color: red;
   display: none;
+}
+
+.parent-user {
+  border-radius: 8px;
+  width: 80%;
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  position: relative;
+  background: white;
+  padding: 0 25px;
+}
+.parent-user h2 {
+  text-align: center;
+}
+
+#output {
+  display: flex;
+}
+#output figure {
+  left: 50%;
+  top: -60px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  position: absolute;
+  transform: translateX(-50%);
+}
+#output figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
