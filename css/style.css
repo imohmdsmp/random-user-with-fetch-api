@@ -26,71 +26,70 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("../img/4853433.jpg");
   background-size: cover;
   background-position: center;
-  background-image: url("https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg");
 }
 main > section {
-  background-color: white;
-  width: 800px;
+  width: 880px;
   height: 500px;
   border-radius: 8px;
   position: relative;
-  background-size: cover;
-  background-position: center;
-  background-image: url("https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg");
-  overflow: hidden;
-}
-main > section > div {
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-main > section > div h2 {
-  margin: 30px 0;
-  font-size: 35px;
-  color: rgb(35, 35, 35);
 }
 main > section > div input {
-  width: 300px;
-  height: 50px;
-  border-radius: 28px;
+  width: 250px;
+  height: 45px;
   padding-left: 20px;
-  margin: 10px 0;
-  border: none;
-  background-color: rgb(209, 209, 209);
+  margin: 15px 0;
+  border: 1px solid #1f1567;
+  border-radius: 8px;
+  padding-right: 40px;
+  transition: 400ms;
 }
 main > section > div input:focus-visible {
   outline: none;
 }
 main > section > div button {
-  width: 168px;
+  width: 250px;
   height: 45px;
-  border-radius: 5px;
+  border-radius: 8px;
   border: 0;
-  background-color: #50a4ff;
+  background-color: #1f1567;
   color: antiquewhite;
   text-shadow: 0 0 10px black;
-  font-size: 15px;
-  margin-top: 40px;
+  font-size: 14px;
+  margin-top: 15px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: 1s;
+}
+main > section > div p {
+  color: #5b5583;
+  font-size: 9px;
+  text-align: justify;
+  margin-top: 20px;
+  width: 250px;
 }
 main > section > div:nth-of-type(1) {
   left: 0;
-  background-size: cover;
-  background-position: center;
-  background-image: url("https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg");
-  overflow: hidden;
 }
 main > section > div:nth-of-type(2) {
+  transition: 1s;
+  position: absolute;
   right: 0;
-  right: 0;
-  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background: #ffffff;
+  height: 350px;
 }
 main > section > div:nth-of-type(2) > div {
   display: flex;
@@ -98,9 +97,33 @@ main > section > div:nth-of-type(2) > div {
   align-items: center;
   justify-content: center;
 }
+main > section > div:nth-of-type(3) {
+  transition: 1s;
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  width: 100px;
+  background-color: white;
+  border-left: 4px solid #3e66ff;
+}
+main > section > div:nth-of-type(3) i {
+  font-size: 30px;
+  color: #2511a7;
+}
+main > section > div:nth-of-type(3) span {
+  font-size: 15px;
+  margin-top: 15px;
+  color: #302461;
+}
 main aside {
   position: fixed;
-  left: 0;
+  left: -290px;
   top: 0;
   background-color: white;
   width: 290px;
@@ -108,6 +131,8 @@ main aside {
   display: flex;
   flex-direction: column;
   padding: 0 30px;
+  transition: 500ms;
+  z-index: 50;
 }
 main aside h4 {
   margin-top: 100px;
@@ -124,8 +149,7 @@ main aside span {
 }
 
 .parent-user {
-  border-radius: 8px;
-  width: 80%;
+  width: 100%;
   min-height: 350px;
   display: flex;
   justify-content: center;
@@ -134,28 +158,196 @@ main aside span {
   position: relative;
   background: white;
   padding: 0 25px;
+  border-radius: 30px;
+  box-shadow: 0 0 5px rgba(197, 197, 197, 0.5843137255);
 }
-.parent-user h2 {
+.parent-user b {
+  margin-right: 5px;
+}
+.parent-user > figure {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  left: 50%;
+  top: -75px;
+  transform: translateX(-50%);
+  position: absolute;
+  outline: 8px solid white;
+  border: 4px solid rgba(245, 245, 255, 0);
+}
+.parent-user > figure img {
+  width: 100%;
+  height: 100%;
+}
+.parent-user > h2 {
   text-align: center;
+  margin-bottom: 30px;
+}
+.parent-user p,
+.parent-user address {
+  color: #241b5a;
+  font-size: 12px;
+  text-align: left;
+  margin-top: 10px;
+  width: 300px;
+  display: flex;
+}
+.parent-user p i,
+.parent-user address i {
+  margin-right: 8px;
+  color: #3e66ff;
 }
 
 #output {
   display: flex;
-}
-#output figure {
-  left: 50%;
-  top: -60px;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 0 auto;
+  background-color: #3e66ff;
+  height: 100%;
+  width: 500px;
+  left: 75px;
   position: absolute;
-  transform: translateX(-50%);
+  z-index: 5;
+  padding: 10px 35px;
+  transform: translateX(0);
+  transition: 1s;
+  overflow: hidden;
 }
-#output figure img {
+#output > h2 {
+  transition: 1s;
+  margin-top: 30px;
+  color: white;
+  position: absolute;
+}
+#output > figure {
+  left: 50%;
+  top: 57%;
+  width: 440px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: 3s;
+}
+#output > figure img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.inp-parent {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.inp-parent label {
+  position: absolute;
+  left: 12px;
+  font-size: 13px;
+  color: #312389;
+  font-weight: bold;
+  transition: 400ms;
+}
+.inp-parent i {
+  position: absolute;
+  right: 15px;
+}
+
+#sign-in {
+  transition: 0.5s;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  letter-spacing: 1;
+}
+
+#spinner {
+  transition: 0.5s;
+  position: absolute;
+  left: 47.5%;
+  transform: translate(-50%, -50%);
+  top: -45%;
+  -webkit-animation: rotateSpin infinite 2s;
+          animation: rotateSpin infinite 2s;
+}
+#spinner i {
+  color: white;
+}
+
+#error {
+  color: red;
+  font-size: 12px;
+  width: 100%;
+}
+
+#error,
+#check {
+  transition: 0.5s;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: -35%;
+}
+#error i,
+#check i {
+  color: white;
+  font-size: 45px;
+}
+
+@-webkit-keyframes rotateSpin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(3600deg);
+  }
+}
+
+@keyframes rotateSpin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(3600deg);
+  }
+}
+.user-info {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 120%);
+  transition: 2s ease-in-out;
+  position: absolute;
+}
+
+.bg-users {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 1s;
+  transition-delay: 1.5s;
+  transform: scale(0);
+}
+.bg-users img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.open {
+  position: absolute;
+  right: -30px;
+  background: white;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  top: 50px;
+  border-radius: 7px;
+  font-size: 18px;
+  color: #3e66ff;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

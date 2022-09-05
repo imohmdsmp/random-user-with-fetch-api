@@ -9,17 +9,21 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 
 <body>
 
     <main>
         <aside>
+            <span class="open">
+                <i class="bi-chevron-right"></i>
+            </span>
             <h4>USERS INFO</h4>
             <p>
                 <span>
                     <b>email:</b> myrtle.grant@example.com
-                    
+
                     <b>Password:</b> onetwo
                 </span>
                 <hr>
@@ -69,17 +73,53 @@
             </p>
         </aside>
         <section>
-            <div id="output"></div>
-            <div>
-                <h2>SIGN IN</h2>
+            <div id="output">
                 <div>
-                    <label for="email"></label>
-                    <input type="text" id="email" name="email" placeholder="EMAIL" onkeyup="enter(event)">
-                    <label for="pass"></label>
-                    <input type="text" id="pass" name="pass" placeholder="PASSWORD" onkeyup="enter(event)">
-                    <div class="error">Email or Password Not valid!</div>
-                    <button onclick="users()">SIGN IN</button>
+                    <figure class="bg-users">
+                        <img src="img/bg1.jpg" alt="">
+                    </figure>
                 </div>
+                <h2>Start your career</h2>
+                <figure>
+                    <img src="img/Detailed examination.svg" alt="">
+                </figure>
+                <div class="user-info"></div>
+            </div>
+            <div>
+                <!-- <span>SIGN IN</span> -->
+                <div>
+
+                    <div class="inp-parent">
+                        <label for="email">E-Mail</label>
+                        <input type="text" id="email" name="email" onkeyup="enter(event)">
+                        <i class="bi-envelope"></i>
+                    </div>
+                    <div class="inp-parent">
+                        <label for="pass">Password</label>
+                        <input type="text" id="pass" name="pass" onkeyup="enter(event)">
+                        <i class="bi-lock"></i>
+                    </div>
+
+                    <button id="click" onclick="users(this)">
+                        <div id="error">
+                            Email or Password Not valid!
+                        </div>
+                        <span id="check">
+                            <i class="bi-check"></i>
+                        </span>
+                        <span id="spinner">
+                            <i class="bi-alexa"></i>
+                        </span>
+                        <span id="sign-in">SIGN IN</span>
+                    </button>
+
+                    <p>By Clicking Sing in Button, You therfore agree to the privacy policy.</p>
+                </div>
+            </div>
+            <div>
+
+                <i class="bi-shield-check"></i>
+                <span>Sign in</span>
             </div>
         </section>
     </main>
